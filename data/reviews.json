@@ -1,0 +1,149 @@
+[
+  {
+    "name": "John D.",
+    "rating": 4.5,
+    "reviewText": "I had a fantastic experience! The service was impeccable, and the food was delicious. I can't wait to come back.",
+    "photoLink": "images/250x400.png"
+  },
+  {
+    "name": "Sarah M.",
+    "rating": 5,
+    "reviewText": "This place exceeded my expectations in every way. The staff was friendly, and the atmosphere was perfect for a romantic dinner.",
+    "photoLink": "images/250x400.png"
+  },
+  {
+    "name": "David S.",
+    "rating": 3.5,
+    "reviewText": "Decent food, but the service could have been better. Waited a bit too long for our orders. Hopefully, they improve in the future."
+  },
+  {
+    "name": "Lisa R.",
+    "rating": 4,
+    "reviewText": "The restaurant had a cozy ambiance, and the dessert was to die for! Definitely recommend the chocolate lava cake."
+  },
+  {
+    "name": "Michael P.",
+    "rating": 2,
+    "reviewText": "I had a terrible experience here. The food was cold, and the staff was rude. I won't be returning."
+  },
+  {
+    "name": "Emily L.",
+    "rating": 1.5,
+    "reviewText": "Avoid this place at all costs. The food was awful, and I got food poisoning. A nightmarish dining experience."
+  },
+  {
+    "name": "Alex B.",
+    "rating": 3,
+    "reviewText": "Average food and service. Not bad, but not great either. Wouldn't go out of my way to dine here again."
+  },
+  {
+    "name": "Sophia K.",
+    "rating": 4.5,
+    "reviewText": "I'm in love with their pasta dishes! The flavors are authentic, and the portions are generous. A must-visit for Italian food lovers."
+  },
+  {
+    "name": "Daniel J.",
+    "rating": 4,
+    "reviewText": "I had a lovely time with my family here. The kids' menu was great, and the staff was accommodating to our needs."
+  },
+  {
+    "name": "Olivia F.",
+    "rating": 2.5,
+    "reviewText": "Meh, it was okay. Nothing to write home about. I expected more for the price. Maybe they should rethink their menu."
+  },
+  {
+    "name": "Grace H.",
+    "rating": 4.5,
+    "reviewText": "The seafood here is top-notch! I could eat their lobster bisque every day. Highly recommended."
+  },
+  {
+    "name": "William G.",
+    "rating": 3.5,
+    "reviewText": "The steak was cooked to perfection, but the sides were lacking. I'd come back for the steak, though."
+  },
+  {
+    "name": "Ella B.",
+    "rating": 4,
+    "reviewText": "A charming little cafe with excellent coffee and pastries. Perfect for a morning pick-me-up."
+  },
+  {
+    "name": "Noah K.",
+    "rating": 2,
+    "reviewText": "I was disappointed with the service. The staff seemed disinterested, and my order was incorrect."
+  },
+  {
+    "name": "Ava M.",
+    "rating": 4.5,
+    "reviewText": "I can't get enough of their sushi rolls. Fresh and delicious! Great place for sushi enthusiasts."
+  },
+  {
+    "name": "James L.",
+    "rating": 3.5,
+    "reviewText": "The ambiance is nice, but the menu could use more variety. It's a decent spot for a quick bite."
+  },
+  {
+    "name": "Charlotte P.",
+    "rating": 5,
+    "reviewText": "Absolutely wonderful! The staff went above and beyond to make our anniversary special."
+  },
+  {
+    "name": "Mason S.",
+    "rating": 1,
+    "reviewText": "Terrible experience. The food was cold, and I found a hair in my salad. Never coming back."
+  },
+  {
+    "name": "Lily C.",
+    "rating": 4,
+    "reviewText": "Great value for money. The portions are generous, and the food is consistently good."
+  },
+  {
+    "name": "Henry W.",
+    "rating": 3,
+    "reviewText": "Decent service, but the food was nothing to write home about. I expected better for the price."
+  },
+  {
+    "name": "Evelyn T.",
+    "rating": 4.5,
+    "reviewText": "A hidden gem! The homemade desserts are divine, and the atmosphere is cozy."
+  },
+  {
+    "name": "Liam R.",
+    "rating": 2.5,
+    "reviewText": "I was underwhelmed by the menu options. The food was okay, but I expected more creativity."
+  },
+  {
+    "name": "Abigail S.",
+    "rating": 4,
+    "reviewText": "The staff was friendly, and the cocktails were fantastic. Great place for a night out with friends."
+  },
+  {
+    "name": "Benjamin L.",
+    "rating": 3.5,
+    "reviewText": "The pizza was good, but it took a long time to arrive. They need to work on their delivery speed."
+  },
+  {
+    "name": "Avery P.",
+    "rating": 4.5,
+    "reviewText": "I love their outdoor seating area. Perfect for a sunny brunch. The eggs benedict is a must-try."
+  },
+  {
+    "name": "Jackson H.",
+    "rating": 3,
+    "reviewText": "The service was slow, and the food was average. Not sure if I'd return anytime soon."
+  },
+  {
+    "name": "Sofia M.",
+    "rating": 5,
+    "reviewText": "Incredible experience! The chef's tasting menu was a culinary journey I'll never forget."
+  },
+  {
+    "name": "Samuel B.",
+    "rating": 2.5,
+    "reviewText": "I expected better from this place. The food was bland, and the prices were too high for what you get."
+  },
+  {
+    "name": "Aria G.",
+    "rating": 4,
+    "reviewText": "Cozy atmosphere and friendly staff. The pastries are delicious, and the coffee is excellent."
+  }
+]
