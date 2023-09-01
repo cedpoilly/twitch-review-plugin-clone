@@ -18,7 +18,13 @@ app.use("/js", express.static(path.join(__dirname, "js")))
 
 const jsonData = JSON.parse(fs.readFileSync("./data/reviews.json"))
 
+// * The first page is used in the initial render
+let page = 2
+
 app.get("/", (_, res) => {
+  // * reset the data page when the client loads the web page
+  page = 2
+
   const FIRST_NAME_NUMBER = 1
 
   res.render("index", {
@@ -27,14 +33,10 @@ app.get("/", (_, res) => {
   })
 })
 
-// * The first page is used in the initial render
-let page = 2
-
 app.get("/next-page", (_, res) => {
   const pageHTML = getPageFromArray(jsonData, page, 5)
     .map((review) => generateReview(review))
     .join("")
-    .trim()
 
   page += 1
 
