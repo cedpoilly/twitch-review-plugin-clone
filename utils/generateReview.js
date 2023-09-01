@@ -1,9 +1,8 @@
 const { generateStarsHTML } = require("./stars")
 
-function generateReview({ name, rating, text, photo_url }) {
-  console.log(name)
+function generateReview({ id, name, rating, text, photo_url }) {
   return `
-  <div class="review">
+  <div class="review" hx-get="/zoom/${id}" hx-taget="zoomHandle" hx-swap="beforebegin">
 
   ${
     !photo_url

@@ -5,6 +5,7 @@ const express = require("express")
 const ejs = require("ejs")
 
 const { generateReview } = require("./utils/generateReview.js")
+const { generateZoomModal } = require("./utils/generateZoomModal.js")
 const { getPageFromArray } = require("./utils/getPageFromArray.js")
 
 const app = express()
@@ -31,6 +32,14 @@ app.get("/next-page", (_, res) => {
   page += 1
 
   res.send(pageHTML)
+})
+
+app.get("/zoom/:id", (req, res) => {
+  console.log(req.params.id)
+  const review = jsonData.find((review) => review.id == req.params.id)
+  const zoomHTML = generateZoomModal(review)
+
+  res.send(zoomHTML)
 })
 
 const port = process.env.PORT || 3000
