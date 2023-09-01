@@ -19,10 +19,16 @@ app.use("/js", express.static(path.join(__dirname, "js")))
 const jsonData = JSON.parse(fs.readFileSync("./data/reviews.json"))
 
 app.get("/", (_, res) => {
-  res.render("index", { reviews: jsonData.slice(0, 4), generateReview })
+  const FIRST_NAME_NUMBER = 1
+
+  res.render("index", {
+    reviews: getPageFromArray(jsonData, FIRST_NAME_NUMBER, 5),
+    generateReview,
+  })
 })
 
-let page = 1
+// * The first page is used in the initial render
+let page = 2
 
 app.get("/next-page", (_, res) => {
   const pageHTML = getPageFromArray(jsonData, page, 5)
