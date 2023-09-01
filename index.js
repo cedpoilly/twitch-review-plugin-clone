@@ -1,7 +1,11 @@
-const express = require("express")
-const ejs = require("ejs")
 const path = require("path")
 const fs = require("fs")
+
+const express = require("express")
+const ejs = require("ejs")
+
+const { generateReview } = require("./utils/generateReview.js")
+const { getPageFromArray } = require("./utils/getPageFromArray.js")
 
 const app = express()
 
@@ -13,43 +17,18 @@ app.use("/images", express.static(path.join(__dirname, "images")))
 const jsonData = JSON.parse(fs.readFileSync("./data/reviews.json"))
 
 app.get("/", (_, res) => {
-  res.render("index", { reviews: jsonData.slice(0, 4) })
+  res.render("index", { reviews: jsonData.slice(0, 4), generateReview })
 })
 
-app.get("/:page", (req, res) => {
-  console.log(req.params)
-  const pageHTML = jsonData
-    .slice(5, 9)
-    .map(
-      (review) => `
-  <div class="review">
+let page = 1
 
-
-  ${
-    !review.photoLink
-      ? ""
-      : `<div
-        class="review__image-container"
-        style="background-image: url( ${review.photoLink} )"
-      ></div>`
-  }
-
-    <h3 class="review__name">
-      ${review.name}
-    </h3>
-
-    <h4 class="review__rating">
-    ${review.rating}
-    </h4>
-
-    <p class="review__text">
-      ${review.reviewText}
-    </p>
-  </div>
-  `
-    )
+app.get("/next-page", (_, res) => {
+  const pageHTML = getPageFromArray(jsonData, page, 5)
+    .map((review) => generateReview(review))
     .join("")
     .trim()
+
+  page += 1
 
   res.send(pageHTML)
 })
