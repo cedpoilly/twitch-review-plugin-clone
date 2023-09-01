@@ -181,15 +181,6 @@
 
 <body>
   <h1>Is that HTMX?! Have I done it?</h1>
-  <script>
-    function closeModal() {
-      const zoomBox = document.querySelector("#reviewBox")
-      zoomBox.classList.add("hide-modal")
-
-      const modal = document.querySelector("#reviewBox-wrapper")
-      setTimeout(() => modal.remove(), 500)
-    }
-  </script>
 
   <div class="zoomHandle"></div>
 
@@ -204,6 +195,9 @@
   <button class='btn button-load-more' hx-get="/next-page" hx-target="#loadBeforeMe" hx-swap="beforebegin">
     Load next page
   </button>
+
+  <script src="/js/close-modal.js"></script>
+  <script src="/js/click-outside.js"></script>
 </body>
 
 </html>

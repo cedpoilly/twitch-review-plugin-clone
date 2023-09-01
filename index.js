@@ -14,6 +14,7 @@ app.set("view engine", "ejs")
 app.set("views", path.join(__dirname, "views"))
 
 app.use("/images", express.static(path.join(__dirname, "images")))
+app.use("/js", express.static(path.join(__dirname, "js")))
 
 const jsonData = JSON.parse(fs.readFileSync("./data/reviews.json"))
 
